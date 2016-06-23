@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -17,42 +17,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHh-fP-D2T">
-                                <rect key="frame" x="59" y="43" width="343" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHh-fP-D2T">
+                                <rect key="frame" x="0.0" y="43" width="600" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1Y-dK-ux1">
-                                <rect key="frame" x="59" y="147" width="334" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1Y-dK-ux1">
+                                <rect key="frame" x="0.0" y="150" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="AAnswer"/>
                                 <connections>
                                     <action selector="optionButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DQS-gX-gLI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUW-og-tZL">
-                                <rect key="frame" x="86" y="223" width="289" height="30"/>
-                                <state key="normal" title="BAnswer"/>
-                                <connections>
-                                    <action selector="optionButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lzj-X0-JVW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azd-W1-ddu">
-                                <rect key="frame" x="83" y="297" width="287" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azd-W1-ddu">
+                                <rect key="frame" x="0.0" y="300" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="CAnswer"/>
                                 <connections>
                                     <action selector="optionButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8cW-Ux-uHQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvN-cp-GNL">
-                                <rect key="frame" x="92" y="381" width="277" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvN-cp-GNL">
+                                <rect key="frame" x="162" y="375" width="277" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="DAnswer"/>
                                 <connections>
                                     <action selector="optionButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gqk-2N-Gfx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUW-og-tZL">
+                                <rect key="frame" x="0.0" y="225" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="BAnswer"/>
+                                <connections>
+                                    <action selector="optionButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lzj-X0-JVW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yF-Ct-Rou" userLabel="result_but">
+                                <rect key="frame" x="0.0" y="320" width="600" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="分析結果"/>
+                                <connections>
+                                    <segue destination="khm-wF-9R4" kind="show" identifier="sendData" id="nni-Ms-AF7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4yF-Ct-Rou" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0QH-0k-soV"/>
+                            <constraint firstItem="Azd-W1-ddu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3IX-ht-mNy"/>
+                            <constraint firstItem="CHh-fP-D2T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EG5-em-6O1"/>
+                            <constraint firstItem="D1Y-dK-ux1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MvL-ty-YJr"/>
+                            <constraint firstItem="gvN-cp-GNL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nys-VU-Q6e"/>
+                            <constraint firstItem="4yF-Ct-Rou" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a0P-XL-Q6R"/>
+                            <constraint firstItem="CUW-og-tZL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gJG-6e-xd2"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="AAnswerButtom" destination="D1Y-dK-ux1" id="rfF-if-q6c"/>
@@ -60,11 +81,51 @@
                         <outlet property="CAnswerButtom" destination="Azd-W1-ddu" id="dAO-PD-glD"/>
                         <outlet property="DAnswerButtom" destination="gvN-cp-GNL" id="EqK-qu-U13"/>
                         <outlet property="QuestionLabel" destination="CHh-fP-D2T" id="bWZ-ft-FrE"/>
+                        <outlet property="result_but" destination="4yF-Ct-Rou" id="XfO-C7-fst"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="289"/>
+        </scene>
+        <!--Result Controller-->
+        <scene sceneID="MGt-L5-ysd">
+            <objects>
+                <tableViewController id="khm-wF-9R4" customClass="resultController" customModule="Eat_What" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="CMT-sa-cN1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="w7y-vi-4vE" customClass="TableViewCell" customModule="Eat_What">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w7y-vi-4vE" id="fHI-fz-5hg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xy-Ip-XVy">
+                                            <rect key="frame" x="8" y="0.0" width="208" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="name" destination="1xy-Ip-XVy" id="JaT-h0-gkc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="khm-wF-9R4" id="rwF-By-omq"/>
+                            <outlet property="delegate" destination="khm-wF-9R4" id="r5k-dC-UbU"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wUJ-t4-oLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="283"/>
         </scene>
     </scenes>
 </document>

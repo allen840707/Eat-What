@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var CAnswerButtom: UIButton!
     @IBOutlet weak var DAnswerButtom: UIButton!
     
+    @IBOutlet weak var result_but: UIButton!
     var data = [["甘泉魚",1,2,"A",150,100,3,2,1,10,2,0,1,0,1,1,0,0,1,1,2,3],
 ["樂山",1,2,"A",180,120,3,3,1,6,2,0,1,0,1,1,0,0,1,1,2,3],
 ["韓大佬",2,7,"A",260,100,1,2,1,6,2,0,1,0,1,1,1,0,0,1,3,2],
@@ -268,7 +269,15 @@ var o = 0
             
             finish = deal( /*A,1reply: */ XX)
             if (finish==1){
+                
        print("GET!!!!!")
+                result_but.hidden = false
+                AAnswerButtom.hidden = true
+                BAnswerButtom.hidden = true
+                CAnswerButtom.hidden = true
+                DAnswerButtom.hidden = true
+                QuestionLabel.hidden = true 
+                
         //seague pass data
             }
         
@@ -288,8 +297,25 @@ var o = 0
         DAnswerButtom.setTitle(question[which][8] as! String, forState: .Normal)
         return which
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "sendData" {
+            let destViewController = segue.destinationViewController as! resultController
+            destViewController.ddata = data
+            
+                
+            }
+            //destViewController.receiveData = wholedata[0][0]
+            
+        }
+    
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        result_but.hidden = true
         //var A = 5
         //if(A.dynamicType == Int.self){print("hjswfebjhbf")}
         

@@ -1,0 +1,8 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "84eb9ff534ae3dfe403629e783498e6e"
+build_time: [520021594, 887047000]
+inputs:
+  "/Users/allen/Documents/xcode  3D/Eat-What/Eat What/resultController.swift": [520021594, 0]
+  "/Users/allen/Documents/xcode  3D/Eat-What/Eat What/TableViewCell.swift": [520017476, 0]
+  "/Users/allen/Documents/xcode  3D/Eat-What/Eat What/ViewController.swift": [520020226, 0]
+  "/Users/allen/Documents/xcode  3D/Eat-What/Eat What/AppDelegate.swift": [520015006, 0]
